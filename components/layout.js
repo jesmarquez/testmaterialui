@@ -14,6 +14,16 @@ export default class extends React.Component {
         <Header />
         <div class="container">
           <div class="row">
+          <div class="col s4"></div>
+            <div class="col s4">
+              <h1>Jobby</h1>
+            </div>
+            <div class="col s4"></div>       
+          
+          </div>
+
+
+          <div class="row">
             <div class="col s4">
             </div>
             <div class="col s4">
@@ -23,6 +33,8 @@ export default class extends React.Component {
 
             </div>
           </div>
+
+
         </div>
       </div>
     )
