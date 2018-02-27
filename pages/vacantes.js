@@ -18,7 +18,13 @@ export default class extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <NavBar />
         <Layout>
-          
+          <ul className="collection with-header">
+            <li className="collection-header"><h4>Vacantes</h4></li>
+            <li className="collection-item"><div>Pedagogo infantil<a href="#!" className="secondary-content"><i className="material-icons">Ver</i></a></div></li>
+            <li className="collection-item"><div>Ingeniero electricista<a href="#!" className="secondary-content"><i className="material-icons">Ver</i></a></div></li>
+            <li className="collection-item"><div>Sicologo<a href="#!" className="secondary-content"><i className="material-icons">Ver</i></a></div></li>
+            <li className="collection-item"><div>Cocinero<a href="#!" className="secondary-content"><i className="material-icons">Ver</i></a></div></li>
+          </ul>
         </Layout>
       </MuiThemeProvider>
    )
