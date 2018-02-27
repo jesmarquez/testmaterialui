@@ -20,6 +20,13 @@ export default class extends React.Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <Layout>
+          <div className="row">
+            <div className="col s4"></div>
+            <div className="col s4">
+              <h1>Jobby</h1>
+            </div>
+            <div className="col s4"></div>       
+          </div>
           <div className="divider"></div>
           <div className="section">
             <h5>Gestión!</h5>

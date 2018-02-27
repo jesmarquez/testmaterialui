@@ -14,13 +14,6 @@ export default class extends React.Component {
         <Header />
         <div className="container">
           <div className="row">
-          <div className="col s4"></div>
-            <div className="col s4">
-              <h1>Jobby</h1>
-            </div>
-            <div className="col s4"></div>       
-          </div>
-          <div className="row">
             <div className="col s1">
             </div>
             <div className="col s10">
