@@ -36,7 +36,7 @@ export default class LoginForm extends React.Component {
           passwd:
           <input type="text" value={this.state.passwd} onChange={this.handlePasswdChange} />
         </label>
-        <input type="submit" value="Login" />
+        <button class="btn waves-effect waves-light" type="submit" name="action">Login!</button>
       </form>
     );
   }
