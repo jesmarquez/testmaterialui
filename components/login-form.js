@@ -1,4 +1,4 @@
-
+import Router from 'next/router'
 export default class LoginForm extends React.Component {
   constructor(props) {
     super(props);
@@ -21,8 +21,9 @@ export default class LoginForm extends React.Component {
   }
   
   handleSubmit(event) {
-    alert('Usuario login: ' + this.state.value);
-    event.preventDefault();
+    // alert('Usuario login: ' + this.state.value);
+    event.preventDefault()
+    Router.push('/vacantes')
   }
 
   render() {

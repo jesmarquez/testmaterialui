@@ -19,7 +19,18 @@ export default class extends React.Component {
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
         <Layout>
-          <Stepper />
+          <div className="divider"></div>
+          <div className="section">
+            <h5>Gestión!</h5>
+            <p>une empresa, universidad y practicantes!...</p>
+            <Stepper />
+          </div>
+          <div className="divider"></div>
+          <div className="section">
+            <h5>Ingresa!</h5>
+            <p>ingresa a jobby seas empresa, practicantes o coordinador!...</p>
+            <a class="waves-effect waves-light btn">Login!</a>
+          </div>          
         </Layout>
       </MuiThemeProvider>
    )
