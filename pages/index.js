@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Layout from '../components/layout.js';
+import FlatButton from 'material-ui/FlatButton';
 
 export default class extends React.Component {
   static async getInitialProps({ req }) {
@@ -16,7 +17,10 @@ export default class extends React.Component {
       });
     return (
       <MuiThemeProvider muiTheme={muiTheme}>
-        <Layout/>
+        <Layout>
+          <FlatButton label="Entrar" />
+          <FlatButton label="Salir" />
+        </Layout>
       </MuiThemeProvider>
    )
   }

@@ -1,9 +1,13 @@
 import React from 'react'
 import Header from '../components/header'
-import FlatButton from 'material-ui/FlatButton';
+
 
 export default class extends React.Component {
-  
+  static propTypes() {
+    return {
+      children: React.PropTypes.object.isRequired
+    }
+  }
   render() {
     return(
       <div>
@@ -11,11 +15,9 @@ export default class extends React.Component {
         <div class="container">
           <div class="row">
             <div class="col s4">
-
             </div>
             <div class="col s4">
-              <FlatButton label="Entrar" />
-              <FlatButton label="Salir" />
+              {this.props.children}
             </div>
             <div class="col s4">
 
