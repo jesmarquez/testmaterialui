@@ -12,21 +12,21 @@ export default class extends React.Component {
     return(
       <div>
         <Header />
-        <div class="container">
-          <div class="row">
-          <div class="col s4"></div>
-            <div class="col s4">
+        <div className="container">
+          <div className="row">
+          <div className="col s4"></div>
+            <div className="col s4">
               <h1>Jobby</h1>
             </div>
-            <div class="col s4"></div>       
+            <div className="col s4"></div>       
           </div>
-          <div class="row">
-            <div class="col s1">
+          <div className="row">
+            <div className="col s1">
             </div>
-            <div class="col s10">
+            <div className="col s10">
               {this.props.children}
             </div>
-            <div class="col s1">
+            <div className="col s1">
             </div>
           </div>
         </div>
