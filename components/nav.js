@@ -3,7 +3,7 @@ import React from 'react'
 export default class NavBar extends React.Component {
   render() {
     return (
-      <nav>
+      <nav className="light-blue darken-4">
         <div className="nav-wrapper">
           <a href="#" className="brand-logo">Jobby</a>
           <ul id="nav-mobile" className="right hide-on-med-and-down">
