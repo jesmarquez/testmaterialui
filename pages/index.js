@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import Link from 'next/link'
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Layout from '../components/layout.js';
 import FlatButton from 'material-ui/FlatButton';
@@ -29,7 +30,9 @@ export default class extends React.Component {
           <div className="section">
             <h5>Ingresa!</h5>
             <p>ingresa a jobby seas empresa, practicantes o coordinador!...</p>
-            <a class="waves-effect waves-light btn">Login!</a>
+            <Link href="/login">
+              <a class="waves-effect waves-light btn">Login!</a>
+            </Link>
           </div>          
         </Layout>
       </MuiThemeProvider>
