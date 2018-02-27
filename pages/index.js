@@ -38,7 +38,7 @@ export default class extends React.Component {
             <h5>Ingresa!</h5>
             <p>ingresa a jobby seas empresa, practicantes o coordinador!...</p>
             <Link href="/login">
-              <a class="waves-effect waves-light btn">Login!</a>
+              <a className="waves-effect waves-light btn">Login!</a>
             </Link>
           </div>          
         </Layout>
