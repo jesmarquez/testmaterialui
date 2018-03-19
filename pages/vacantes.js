@@ -5,12 +5,9 @@ import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Layout from '../components/layout.js'
 import NavBar from '../components/nav'
 import VacanteLista from '../components/vacante-lista'
+import Page from '../components/page'
 
-export default class extends React.Component {
-  static async getInitialProps({ req }) {
-    const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-    return { userAgent }
-  }
+export default class extends Page {
 
   render() {
     const muiTheme = getMuiTheme({

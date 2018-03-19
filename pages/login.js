@@ -4,11 +4,9 @@ import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme';
 import Layout from '../components/layout.js';
 import Login from '../components/login-form';
-export default class extends React.Component {
-  static async getInitialProps({ req }) {
-    const userAgent = req ? req.headers['user-agent'] : navigator.userAgent
-    return { userAgent }
-  }
+import Page from '../components/page'
+
+export default class extends Page {
 
   render() {
     const muiTheme = getMuiTheme({
