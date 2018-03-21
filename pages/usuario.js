@@ -6,20 +6,22 @@ import NavBar from '../components/nav'
 import Layout from '../components/layout.js'
 import {Card, CardActions, CardHeader, CardText} from 'material-ui/Card'
 import FlatButton from 'material-ui/FlatButton'
+import fetch from 'isomorphic-fetch'
 
 export default class extends Page {
+
+  static async getInitialProps({req, query}) {
+    let props = await super.getInitialProps({req, query})
+    const res = await fetch('http://localhost:3001/api/usuario')
+    const json = await res.json()
+    props.user = json
+    return props
+  }
 
   constructor(props) {
     super(props)
 
-    var single = {
-      username: 'jamarquez',
-      nombres: 'Jesus Alberto',
-      apellidos: 'Marquez Acevedo',
-      email: 'jamarquez@uao.edu.co'
-    }
-
-    this.state = {usuario: single};
+    this.state = {usuario: props.user};
   }
 
   render() {
@@ -48,8 +50,8 @@ export default class extends Page {
               <CardText expandable={true}>
                 <p>username: { this.state.usuario.username }</p>
                 <p>email: { this.state.usuario.email }</p>
-                <p>nombres:{ this.state.usuario.nombres }</p>
-                <p>apellido: { this.state.usuario.apellidos }</p>
+                <p>password:{ this.state.usuario.password }</p>
+                <p>lastaccess: { this.state.usuario.lastAccess }</p>
               </CardText>
             </Card>
             </div>
