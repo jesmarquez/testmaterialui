@@ -2,7 +2,22 @@
 
 ## Pages
 
-- index
+- /
+
+   Es un home 
+
+- /login
+
+  Es un login
+  
+- /usuario
+
+  Hace un request con *isomorphic-fetch* a un servidor API en el puerto 3001 y despliega en un card.
+
+- /vacantes
+
+  Despliega en una lista de vacantes.
+
 
 ## Instalación
 
