@@ -11,7 +11,7 @@ export default class extends Page {
   static async getInitialProps ({req, query}) {
     let props = await super.getInitialProps({req, query})
 
-    const res = await fetch('http://localhost:3001/api/entregas-vencidas')
+    const res = await fetch('http://localhost:3000/api/entregas-vencidas')
     const json = await res.json()
     json.forEach(element => {
       console.log(element.nombre)

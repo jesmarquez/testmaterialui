@@ -17,7 +17,7 @@ export default class ListaEntregasVencidas extends React.Component {
             leftAvatar={<Avatar icon={<FileFolder />} />}
             rightIcon={<ActionInfo />}
             primaryText={e.nombre}
-            secondaryText={e.fechaEntrega}
+            secondaryText={<p>Entrega: { e.fechaEntrega } ha transcurrido  { e.diasVencidos } días</p>}
           />
         ))}
       </List>
